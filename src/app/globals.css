@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", sans-serif;
+  color: #191f28;
+}
