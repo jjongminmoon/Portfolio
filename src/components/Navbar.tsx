@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <section
       className={`w-full flex justify-between items-center h-16 px-60 ${
-        scrollPosition > 0 ? "border-b" : null
+        scrollPosition > 0 ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
       <h1 className="text-xl font-bold">{"MJ's Portfolio"}</h1>
