@@ -2,10 +2,13 @@ import Image from "next/image";
 import mainImage from "../../public/images/developer.webp";
 import Divider from "./icons/DividerIcon";
 import Arrow from "./icons/ArrowIcon";
+import { responsive } from "@/app/page";
 
 export default function Home() {
   return (
-    <section className="flex flex-col gap-4 justify-center items-center h-[650px] px-60 font-bold">
+    <section
+      className={`flex flex-col gap-4 justify-center items-center h-[650px] font-bold px-60 ${responsive}`}
+    >
       <Image
         className="absolute top-0 left-0 w-full h-full opacity-70 -z-50"
         src={mainImage}

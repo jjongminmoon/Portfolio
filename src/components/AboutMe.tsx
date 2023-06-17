@@ -1,3 +1,4 @@
+import { responsive } from "@/app/page";
 import AddressIcon from "./icons/AddressIcon";
 import CalendarIcon from "./icons/CalendarIcon";
 import EducationIcon from "./icons/EducationIcon";
@@ -17,7 +18,7 @@ const itemList = [
 
 export default function AboutMe() {
   return (
-    <section className="px-60 pt-10 mb-10">
+    <section className={`px-60 pt-10 mb-10 ${responsive}`}>
       <Title>ABOUT ME</Title>
       <ul className="grid grid-cols-3 gap-5 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
         {itemList.map((item) => (
