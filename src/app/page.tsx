@@ -11,11 +11,21 @@ export default function Main() {
   return (
     <main>
       <Home />
-      <AboutMe />
-      <Career />
-      <Skills />
-      <Repository />
-      <Projects />
+      <div id="a">
+        <AboutMe />
+      </div>
+      <div id="b">
+        <Career />
+      </div>
+      <div id="c">
+        <Skills />
+      </div>
+      <div id="d">
+        <Repository />
+      </div>
+      <div id="e">
+        <Projects />
+      </div>
     </main>
   );
 }

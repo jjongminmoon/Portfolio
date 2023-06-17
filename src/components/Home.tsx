@@ -1,7 +1,6 @@
 import Image from "next/image";
 import mainImage from "../../public/images/developer.webp";
 import Divider from "./icons/DividerIcon";
-import Arrow from "./icons/ArrowIcon";
 import { responsive } from "@/app/page";
 
 export default function Home() {
@@ -25,10 +24,6 @@ export default function Home() {
         <br />
         프론트엔드 개발자입니다.
       </p>
-      <button className="flex items-center gap-2 px-6 py-3 bg-blue-400 rounded-3xl text-white text-sm font-semibold mt-3 hover:shadow-md">
-        알아보기
-        <Arrow />
-      </button>
     </section>
   );
 }

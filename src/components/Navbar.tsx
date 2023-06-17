@@ -1,15 +1,15 @@
 "use client";
 
-import { responsive } from "@/app/page";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
+import { responsive } from "@/app/page";
 
 const navList = [
-  { title: "About Me", path: "/about" },
-  { title: "Career", path: "/career" },
-  { title: "Skills", path: "/skills" },
-  { title: "Repository", path: "/repository" },
-  { title: "Projects", path: "/projects" }
+  { title: "About Me", path: "a" },
+  { title: "Career", path: "b" },
+  { title: "Skills", path: "c" },
+  { title: "Repository", path: "d" },
+  { title: "Projects", path: "e" }
 ];
 
 export default function Navbar() {
@@ -31,7 +31,14 @@ export default function Navbar() {
       <h1 className="text-xl font-bold">{"MJ's Portfolio"}</h1>
       <nav className="flex gap-8 text-neutral-700">
         {navList.map((list) => (
-          <Link key={list.path} href={list.path}>
+          <Link
+            className="cursor-pointer"
+            key={list.path}
+            to={list.path}
+            spy={true}
+            smooth={true}
+            offset={-60}
+          >
             {list.title}
           </Link>
         ))}

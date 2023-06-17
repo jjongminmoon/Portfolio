@@ -1,4 +1,3 @@
-import { responsive } from "@/app/page";
 import AddressIcon from "./icons/AddressIcon";
 import CalendarIcon from "./icons/CalendarIcon";
 import EducationIcon from "./icons/EducationIcon";
@@ -6,6 +5,7 @@ import EmailIcon from "./icons/EmailIcon";
 import MeIcon from "./icons/MeIcon";
 import PhoneIcon from "./icons/PhoneIcon";
 import Title from "./ui/Title";
+import { responsive } from "@/app/page";
 
 const itemList = [
   { title: "이름", icon: <MeIcon />, content: "문종민" },

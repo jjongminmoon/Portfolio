@@ -1,67 +1,12 @@
-import { responsive } from "@/app/page";
 import Title from "./ui/Title";
-import Link from "next/link";
-import SingleCarousel from "./SingleCarousel";
-import SubTitle from "./ui/SubTitle";
+import Mout from "./projects/Mout";
+import { responsive } from "@/app/page";
 
 export default function Projects() {
   return (
     <section className={`px-60 py-10 bg-teal-400 ${responsive}`}>
       <Title>PROJECTS</Title>
-      <article className="bg-white rounded-lg px-10 py-5">
-        <h1 className="text-4xl font-bold mb-4">Mout__ </h1>
-        <h2 className="text-lg">쇼핑몰 및 스타일 공유 커뮤니티 (개인 프로젝트)</h2>
-        <p className="text-gray-500">(2023.03.13 - 04.02)</p>
-        <div>
-          <div className="w-full rounded-md mt-5 mb-10 border">
-            <SingleCarousel />
-          </div>
-          <SubTitle>개요</SubTitle>
-          <div className="p-2">
-            프론트엔드 부트캠프가 끝난 후 그 전까지 배웠던 내용들을 통해 쇼핑몰 및 커뮤니티
-            프로젝트를 진행했습니다.
-            <br />
-            상품 데이터 보여주기, 회원가입, 로그인, 제품/사이즈 선택 후 장바구니에 담기, 장바구니,
-            제품 검색/자동완성, 제품 카테고리, 상세 페이지 등 프론트엔드 개발자로서 구현 가능한
-            대부분의 기능들이 들어가 있는 웹서비스가 쇼핑몰이었기 때문에 지금까지 배운 것을 활용해
-            완성도 있는 웹서비스를 구현해보고 싶었습니다.
-            <br />
-            또한, 추가적으로 데이터베이스를 만들어 이를 활용해 스타일 공유 커뮤니티 페이지를
-            구현하여 게시글을 작성하고 볼 수 있는 등 좀 더 재미있는 요소를 추가해보았습니다.
-          </div>
-          <SubTitle>
-            배포 링크 :{" "}
-            <Link className="text-blue-400" href="https://mjstore.vercel.app/">
-              https://mjstore.vercel.app/
-            </Link>
-          </SubTitle>
-          <div className="flex items-center my-2">
-            <SubTitle>기술 스택 : </SubTitle>
-            <p>
-              &nbsp;Typescript, React, React-Query, Emotion, Firebase Auth, Firestore Database,
-              Vercel
-            </p>
-          </div>
-          <SubTitle>코드 및 기능 소개</SubTitle>
-          <div className="mb-2 p-2">
-            <p>✅ Glitch를 활용해 배포한 제품 API를 사용해 제품 리스트 구현</p>
-            <p>
-              ✅ React-Query를 사용해 서버에 저장되어 있는 상태를 상품 데이터가 필요한 컴포넌트 별로
-              간결하게 사용
-            </p>
-            <p>✅ debounce를 활용한 커스텀 훅을 통해 검색창 자동완성 관련 효율성 및 성능 개선</p>
-            <p>✅ Firebase Auth로 회원가입 / 로그인 / 회원정보 수정 구현</p>
-            <p>
-              ✅ Firestore Database로 유저별 장바구니 / 상품 리뷰 / 스타일 공유 커뮤니티
-              데이터베이스 구현
-            </p>
-            <p>
-              ✅ UI는 반응형 웹으로로 스타일링해 데스크톱, 모바일 환경 모두 큰 불편함없이 사용
-              가능하도록 구현
-            </p>
-          </div>
-        </div>
-      </article>
+      <Mout />
     </section>
   );
 }

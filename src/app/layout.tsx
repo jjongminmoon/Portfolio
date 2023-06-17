@@ -1,5 +1,5 @@
-import Navbar from "@/components/Navbar";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 import { Noto_Sans_KR } from "next/font/google";
 
 const sans = Noto_Sans_KR({
@@ -8,7 +8,7 @@ const sans = Noto_Sans_KR({
 });
 
 export const metadata = {
-  title: "MJ's Portfolio",
+  title: "@ MJ's Portfolio",
   description: "문종민(MJ)의 포트폴리오"
 };
 

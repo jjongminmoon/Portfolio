@@ -38,7 +38,7 @@ export default function Repository() {
               {list.logo}
               {list.name}
             </h1>
-            <Link className="text-blue-400" href={list.path}>
+            <Link className="text-blue-400" href={list.path} target="_blank">
               🔗{list.path}🔗
             </Link>
             <h2 className="text-xl font-bold">{list.title}</h2>
