@@ -1,11 +1,13 @@
 import AddressIcon from "./icons/AddressIcon";
 import CalendarIcon from "./icons/CalendarIcon";
-import EducationIcon from "./icons/EducationIcon";
+import EducationIcon from "./icons/GraduateIcon";
 import EmailIcon from "./icons/EmailIcon";
 import MeIcon from "./icons/MeIcon";
 import PhoneIcon from "./icons/PhoneIcon";
 import Title from "./ui/Title";
 import { responsive } from "@/app/page";
+import GraduateIcon from "./icons/GraduateIcon";
+import Educations from "./Educations";
 
 const itemList = [
   { title: "이름", icon: <MeIcon />, content: "문종민" },
@@ -13,7 +15,7 @@ const itemList = [
   { title: "주소", icon: <AddressIcon />, content: "인천광역시 서구 심곡동" },
   { title: "연락처", icon: <PhoneIcon />, content: "010-3359-7042" },
   { title: "이메일", icon: <EmailIcon />, content: "mjm7042@kakao.com" },
-  { title: "학력", icon: <EducationIcon />, content: "동양미래대학교 (경영정보학부)" }
+  { title: "학력", icon: <GraduateIcon />, content: "동양미래대학교 (경영정보학부)" }
 ];
 
 export default function AboutMe() {
@@ -33,6 +35,7 @@ export default function AboutMe() {
           </li>
         ))}
       </ul>
+      <Educations />
     </section>
   );
 }

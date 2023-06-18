@@ -1,5 +1,5 @@
-import { FaGraduationCap } from "react-icons/fa";
+import { HiPencil } from "react-icons/hi";
 
 export default function EducationIcon() {
-  return <FaGraduationCap className="w-8 h-8" />;
+  return <HiPencil className="w-8 h-8" />;
 }
