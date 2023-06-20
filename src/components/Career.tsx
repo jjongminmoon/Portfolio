@@ -39,7 +39,7 @@ export default function Career() {
             className={`flex justify-center w-full gap-10 ${careerResponsive}`}
           >
             <CircleImage
-              className="rounded-full"
+              className="rounded-full flex-shrink-0"
               image={list.logo}
               altMessage={list.alt}
               width={200}

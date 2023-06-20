@@ -47,7 +47,7 @@ export default function Navbar() {
       </section>
       <nav
         className={`flex justify-center gap-4 text-neutral-700 text-sm md:hidden lg:hidden xl:hidden ${
-          scrollPosition > 0 ? "bg-white shadow-md border border-white" : "bg-transparent"
+          scrollPosition > 0 ? "bg-white shadow-md border border-white pb-2" : "bg-transparent"
         }`}
       >
         {navList.map((list) => (
