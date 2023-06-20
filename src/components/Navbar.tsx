@@ -26,7 +26,7 @@ export default function Navbar() {
     <>
       <section
         className={`relative px-60 w-full flex justify-between items-center h-16 sm:justify-center ${
-          scrollPosition > 0 ? "bg-white shadow-md" : "bg-transparent"
+          scrollPosition > 0 ? "bg-white shadow-md sm:shadow-none" : "bg-transparent"
         } ${responsive}`}
       >
         <h1 className="text-xl font-bold">{"MJ's Portfolio"}</h1>
@@ -45,7 +45,11 @@ export default function Navbar() {
           ))}
         </nav>
       </section>
-      <nav className="flex justify-center gap-4 text-neutral-700 text-sm md:hidden lg:hidden xl:hidden">
+      <nav
+        className={`flex justify-center gap-4 text-neutral-700 text-sm md:hidden lg:hidden xl:hidden ${
+          scrollPosition > 0 ? "bg-white shadow-md border border-white" : "bg-transparent"
+        }`}
+      >
         {navList.map((list) => (
           <Link
             className="cursor-pointer"
