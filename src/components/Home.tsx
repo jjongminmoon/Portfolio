@@ -1,7 +1,7 @@
 import Image from "next/image";
 import mainImage from "../../public/images/developer.webp";
 import Divider from "./icons/DividerIcon";
-import { responsive } from "@/app/page";
+import { responsive } from "./ui/responsive";
 
 export default function Home() {
   return (

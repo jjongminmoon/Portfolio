@@ -11,9 +11,9 @@ import Educations from "./Educations";
 import CircleImage from "./ui/CircleImage";
 import profileImage from "../../public/images/me.webp";
 import ExpandingIcon from "./icons/ExpandingIcon";
-import { responsive } from "@/app/page";
-import { useState } from "react";
 import ImageExpanding from "./ImageExpanding";
+import { useState } from "react";
+import { responsive } from "./ui/responsive";
 
 const itemList = [
   { title: "이름", icon: <MeIcon />, content: "문종민" },

@@ -2,7 +2,7 @@
 
 import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
-import { responsive } from "@/app/page";
+import { responsive } from "./ui/responsive";
 
 const navList = [
   { title: "About Me", path: "a" },

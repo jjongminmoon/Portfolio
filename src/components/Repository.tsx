@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Title from "./ui/Title";
 import { SiTistory, SiGithub } from "react-icons/si";
-import { responsive } from "@/app/page";
+import { responsive } from "./ui/responsive";
 
 const repoList = [
   {

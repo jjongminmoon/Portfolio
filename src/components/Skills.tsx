@@ -3,7 +3,7 @@ import frontend from "../../public/images/frontendSkills.webp";
 import backend from "../../public/images/backendSkills.webp";
 import deployment from "../../public/images/deploymentSkills.webp";
 import Image from "next/image";
-import { responsive } from "@/app/page";
+import { responsive } from "./ui/responsive";
 
 const imageList = [
   { title: "Frontend", alt: "Frontend Skills", image: frontend },

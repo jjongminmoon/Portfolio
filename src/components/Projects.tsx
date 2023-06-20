@@ -1,6 +1,6 @@
 import Title from "./ui/Title";
 import Mout from "./projects/Mout";
-import { responsive } from "@/app/page";
+import { responsive } from "./ui/responsive";
 
 export default function Projects() {
   return (

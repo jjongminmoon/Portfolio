@@ -1,8 +1,8 @@
 import Title from "./ui/Title";
 import samsung from "../../public/images/samsung.webp";
 import nonghyup from "../../public/images/nonghyup.webp";
-import { responsive } from "@/app/page";
 import CircleImage from "./ui/CircleImage";
+import { responsive } from "./ui/responsive";
 
 const careerList = [
   {
