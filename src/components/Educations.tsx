@@ -1,6 +1,6 @@
-import Image from "next/image";
 import EducationIcon from "./icons/EducationIcon";
 import zerobase from "../../public/images/zerobase.webp";
+import CircleImage from "./ui/CircleImage";
 
 export default function Educations() {
   return (
@@ -11,7 +11,13 @@ export default function Educations() {
           <p>교육</p>
         </div>
         <div className="flex gap-5 items-center">
-          <Image src={zerobase} alt="Zerobase Logo" width={50} height={50} />
+          <CircleImage
+            className="rounded-full"
+            image={zerobase}
+            altMessage="Zerobase Logo"
+            width={50}
+            height={50}
+          />
           <p className="font-bold">제로베이스 프론트엔드 스쿨(2022.10 ~ 2023.03)</p>
         </div>
       </div>

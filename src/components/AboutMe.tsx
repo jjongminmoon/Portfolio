@@ -1,13 +1,19 @@
+"use client";
+
 import AddressIcon from "./icons/AddressIcon";
 import CalendarIcon from "./icons/CalendarIcon";
-import EducationIcon from "./icons/GraduateIcon";
 import EmailIcon from "./icons/EmailIcon";
 import MeIcon from "./icons/MeIcon";
 import PhoneIcon from "./icons/PhoneIcon";
 import Title from "./ui/Title";
-import { responsive } from "@/app/page";
 import GraduateIcon from "./icons/GraduateIcon";
 import Educations from "./Educations";
+import CircleImage from "./ui/CircleImage";
+import profileImage from "../../public/images/me.webp";
+import ExpandingIcon from "./icons/ExpandingIcon";
+import { responsive } from "@/app/page";
+import { useState } from "react";
+import ImageExpanding from "./ImageExpanding";
 
 const itemList = [
   { title: "이름", icon: <MeIcon />, content: "문종민" },
@@ -19,9 +25,27 @@ const itemList = [
 ];
 
 export default function AboutMe() {
+  const [expand, setExpand] = useState(false);
+
   return (
     <section className={`px-60 pt-10 mb-10 ${responsive}`}>
       <Title>ABOUT ME</Title>
+      <div className="flex flex-col items-center justify-center mb-5">
+        <CircleImage
+          className="rounded-full cursor-pointer shadow-md object-cover"
+          image={profileImage}
+          altMessage="Profile Image"
+          width={200}
+          height={200}
+        />
+        <div
+          className="flex items-center gap-2 mt-3 px-4 py-1 bg-blue-400 rounded-full text-white cursor-pointer shadow-md"
+          onClick={() => setExpand(true)}
+        >
+          <ExpandingIcon />
+          확대
+        </div>
+      </div>
       <ul className="grid grid-cols-3 gap-5 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
         {itemList.map((item) => (
           <li className="flex flex-col items-center gap-5 w-full" key={item.title}>
@@ -36,6 +60,7 @@ export default function AboutMe() {
         ))}
       </ul>
       <Educations />
+      {expand && <ImageExpanding onClick={() => setExpand(false)} />}
     </section>
   );
 }

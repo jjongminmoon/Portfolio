@@ -1,8 +1,8 @@
-import Image from "next/image";
 import Title from "./ui/Title";
 import samsung from "../../public/images/samsung.webp";
 import nonghyup from "../../public/images/nonghyup.webp";
 import { responsive } from "@/app/page";
+import CircleImage from "./ui/CircleImage";
 
 const careerList = [
   {
@@ -38,10 +38,10 @@ export default function Career() {
             key={list.name}
             className={`flex justify-center w-full gap-10 ${careerResponsive}`}
           >
-            <Image
+            <CircleImage
               className="rounded-full"
-              src={list.logo}
-              alt={list.alt}
+              image={list.logo}
+              altMessage={list.alt}
               width={200}
               height={200}
             />

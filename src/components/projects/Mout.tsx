@@ -43,7 +43,11 @@ export default function Mout() {
           </div>
           <SubTitle>
             배포 링크 :{" "}
-            <Link className="text-blue-400" href="https://mjstore.vercel.app/">
+            <Link
+              className="text-blue-400"
+              href="https://mjstore.vercel.app/"
+              referrerPolicy="no-referrer"
+            >
               https://mjstore.vercel.app/
             </Link>
           </SubTitle>
