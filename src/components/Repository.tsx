@@ -39,7 +39,7 @@ export default function Repository() {
               {list.name}
             </h1>
             <Link
-              className="text-blue-400"
+              className="text-blue-400 sm:text-sm"
               href={list.path}
               target="_blank"
               referrerPolicy="no-referrer"
@@ -47,7 +47,7 @@ export default function Repository() {
               🔗{list.path}🔗
             </Link>
             <h2 className="text-xl font-bold">{list.title}</h2>
-            <div className="flex flex-col gap-1 text-center">
+            <div className="flex flex-col gap-1 text-center sm:text-xs">
               <p>{list.content1}</p>
               <p>{list.content2}</p>
               <p>{list.content3}</p>

@@ -23,13 +23,29 @@ export default function Navbar() {
   });
 
   return (
-    <section
-      className={`px-60 w-full flex justify-between items-center h-16 ${
-        scrollPosition > 0 ? "bg-white shadow-md" : "bg-transparent"
-      } ${responsive}`}
-    >
-      <h1 className="text-xl font-bold">{"MJ's Portfolio"}</h1>
-      <nav className="flex gap-8 text-neutral-700">
+    <>
+      <section
+        className={`relative px-60 w-full flex justify-between items-center h-16 sm:justify-center ${
+          scrollPosition > 0 ? "bg-white shadow-md" : "bg-transparent"
+        } ${responsive}`}
+      >
+        <h1 className="text-xl font-bold">{"MJ's Portfolio"}</h1>
+        <nav className="flex gap-8 text-neutral-700 sm:hidden">
+          {navList.map((list) => (
+            <Link
+              className="cursor-pointer"
+              key={list.path}
+              to={list.path}
+              spy={true}
+              smooth={true}
+              offset={-60}
+            >
+              {list.title}
+            </Link>
+          ))}
+        </nav>
+      </section>
+      <nav className="flex justify-center gap-4 text-neutral-700 text-sm md:hidden lg:hidden xl:hidden">
         {navList.map((list) => (
           <Link
             className="cursor-pointer"
@@ -43,6 +59,6 @@ export default function Navbar() {
           </Link>
         ))}
       </nav>
-    </section>
+    </>
   );
 }

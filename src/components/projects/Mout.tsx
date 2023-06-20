@@ -14,11 +14,11 @@ export default function Mout() {
 
   return (
     <article className="bg-white rounded-lg px-10 py-5 mb-10">
-      <div className="flex justify-between items-center gap-3 mb-5">
+      <div className="flex justify-between items-center gap-3 mb-5 sm:flex-col">
         <div className="w-full text-center">
           <h1 className="text-4xl font-bold mb-4">Mout__ </h1>
-          <h2 className="text-lg">쇼핑몰 및 스타일 공유 커뮤니티 (개인 프로젝트)</h2>
-          <p className="text-gray-500">(2023.03.13 - 04.02)</p>
+          <h2 className="text-lg sm:text-xs">쇼핑몰 및 스타일 공유 커뮤니티 (개인 프로젝트)</h2>
+          <p className="text-gray-500 sm:text-xs">(2023.03.13 - 04.02)</p>
         </div>
         <Image className="w-3/5 h-full border" src={moutCategory} alt="Project Image" />
       </div>
@@ -44,14 +44,14 @@ export default function Mout() {
           <SubTitle>
             배포 링크 :{" "}
             <Link
-              className="text-blue-400"
+              className="text-blue-400 sm:text-sm"
               href="https://mjstore.vercel.app/"
               referrerPolicy="no-referrer"
             >
               https://mjstore.vercel.app/
             </Link>
           </SubTitle>
-          <div className="flex items-center my-2">
+          <div className="flex items-center my-2 sm:text-sm sm:flex-col sm:items-start">
             <SubTitle>기술 스택 : </SubTitle>
             <p>
               &nbsp;Typescript, React, React-Query, Emotion, Firebase Auth, Firestore Database,
