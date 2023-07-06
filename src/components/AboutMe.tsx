@@ -32,11 +32,11 @@ export default function AboutMe() {
       <Title>ABOUT ME</Title>
       <div className="flex flex-col items-center justify-center mb-5">
         <CircleImage
-          className="rounded-full cursor-pointer shadow-md object-cover"
+          className="w-[200px] h-[200px] rounded-full cursor-pointer shadow-md"
           image={profileImage}
           altMessage="Profile Image"
-          width={200}
-          height={200}
+          width={2000}
+          height={2000}
         />
         <div
           className="flex items-center gap-2 mt-3 px-4 py-1 bg-blue-400 rounded-full text-white cursor-pointer shadow-md"

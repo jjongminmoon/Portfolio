@@ -11,7 +11,13 @@ export default function ImageExpanding({ onClick }: Props) {
       className="fixed top-0 left-0 bg-neutral-900/70 w-full h-full flex justify-center items-center pt-16 z-9999 cursor-pointer"
       onClick={onClick}
     >
-      <Image className="w-2/5 h-4/5 rounded-full sm:w-4/5" src={expandMe} alt="Profile Image" />
+      <Image
+        className="w-[500px] h-[600px] rounded-xl sm:w-4/5"
+        src={expandMe}
+        alt="Profile Image"
+        width={2000}
+        height={2000}
+      />
     </section>
   );
 }

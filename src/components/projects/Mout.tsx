@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import SingleCarousel from "../SingleCarousel";
+import MoutCarousel from "../MoutCarousel";
 import SubTitle from "../ui/SubTitle";
 import ToggleButton from "../ui/ToggleButton";
 import Image from "next/image";
@@ -13,11 +13,14 @@ export default function Mout() {
   const [toggled, setToggled] = useState(false);
 
   return (
-    <article className="bg-white rounded-lg px-10 py-5 mb-10">
+    <article className="bg-white rounded-lg px-7 py-5 mb-10">
       <div className="flex justify-between items-center gap-3 mb-5 sm:flex-col">
         <div className="w-full text-center">
-          <h1 className="text-4xl font-bold mb-4">Mout__ </h1>
-          <h2 className="text-lg sm:text-xs">쇼핑몰 및 스타일 공유 커뮤니티 (개인 프로젝트)</h2>
+          <h1 className="text-4xl font-bold mb-4">Mout__</h1>
+          <h2 className="text-lg sm:text-xs">
+            쇼핑몰 및 스타일 공유 커뮤니티
+            <br /> (개인 프로젝트)
+          </h2>
           <p className="text-gray-500 sm:text-xs">(2023.03.13 - 04.02)</p>
         </div>
         <Image className="w-3/5 h-full border" src={moutCategory} alt="Project Image" />
@@ -26,7 +29,7 @@ export default function Mout() {
       {toggled && (
         <div className="ease-in-out duration-1000">
           <div className="w-full rounded-md mt-5 mb-10 border">
-            <SingleCarousel />
+            <MoutCarousel />
           </div>
           <SubTitle>개요</SubTitle>
           <div className="p-2">
@@ -51,7 +54,7 @@ export default function Mout() {
               https://mjstore.vercel.app/
             </Link>
           </SubTitle>
-          <div className="flex items-center my-2 sm:text-sm sm:flex-col sm:items-start">
+          <div className="flex flex-col gap-2 my-2 sm:text-sm sm:flex-col sm:items-start">
             <SubTitle>기술 스택 : </SubTitle>
             <p>
               &nbsp;Typescript, React, React-Query, Emotion, Firebase Auth, Firestore Database,
@@ -62,7 +65,7 @@ export default function Mout() {
           <ProjectIntroduction>
             <p>✅ Glitch를 활용해 배포한 제품 API를 사용해 제품 리스트 구현</p>
             <p>
-              ✅ React-Query를 사용해 서버에 저장되어 있는 상태를 상품 데이터가 필요한 컴포넌트 별로
+              ✅ React-Query를 사용해 서버에 저장되어 있는 상태를 데이터가 필요한 컴포넌트 별로
               간결하게 사용
             </p>
             <p>✅ debounce를 활용한 커스텀 훅을 통해 검색창 자동완성 관련 효율성 및 성능 개선</p>
