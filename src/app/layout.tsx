@@ -15,12 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={sans.className}>
-      <body className="w-full mx-auto">
-        <header className="sticky top-0 z-50">
-          <Navbar />
-        </header>
-        {children}
-      </body>
+      <body className="w-full mx-auto overflow-auto min-w-[1280px]">{children}</body>
     </html>
   );
 }

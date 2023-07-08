@@ -11,9 +11,8 @@ import Educations from "./Educations";
 import CircleImage from "./ui/CircleImage";
 import profileImage from "../../public/images/me.webp";
 import ExpandingIcon from "./icons/ExpandingIcon";
-import ImageExpanding from "./ImageExpanding";
+import ImageExpanding from "./ui/ImageExpanding";
 import { useState } from "react";
-import { responsive } from "./ui/responsive";
 
 const itemList = [
   { title: "이름", icon: <MeIcon />, content: "문종민" },
@@ -28,7 +27,7 @@ export default function AboutMe() {
   const [expand, setExpand] = useState(false);
 
   return (
-    <section className={`px-60 pt-10 mb-10 ${responsive}`}>
+    <section className="px-60 pt-10 mb-10">
       <Title>ABOUT ME</Title>
       <div className="flex flex-col items-center justify-center mb-5">
         <CircleImage
@@ -46,7 +45,7 @@ export default function AboutMe() {
           확대
         </div>
       </div>
-      <ul className="grid grid-cols-3 gap-5 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
+      <ul className="grid grid-cols-3 gap-5">
         {itemList.map((item) => (
           <li className="flex flex-col items-center gap-5 w-full" key={item.title}>
             <div className="flex items-center justify-center gap-3 py-2 px-5 bg-neutral-100 rounded-full w-full shadow-md">

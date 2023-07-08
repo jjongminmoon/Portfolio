@@ -3,5 +3,5 @@ type Props = {
 };
 
 export default function ProjectIntroduction({ children }: Props) {
-  return <div className="mb-2 p-2">{children}</div>;
+  return <div className="p-2">{children}</div>;
 }

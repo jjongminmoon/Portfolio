@@ -1,6 +1,6 @@
 import Image from "next/image";
-import expandMe from "../../public/images/expandMe.webp";
-import ExitIcon from "./icons/ExitIcon";
+import expandMe from "../../../public/images/expandMe.webp";
+import ExitIcon from "../icons/ExitIcon";
 
 type Props = {
   onClick: () => void;
@@ -13,7 +13,7 @@ export default function ImageExpanding({ onClick }: Props) {
         <ExitIcon />
       </button>
       <Image
-        className="w-[500px] h-[550px] rounded-xl sm:w-4/5"
+        className="w-[500px] h-[550px] rounded-xl"
         src={expandMe}
         alt="Profile Image"
         width={2000}

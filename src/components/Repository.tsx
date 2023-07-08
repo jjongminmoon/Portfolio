@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Title from "./ui/Title";
 import { SiTistory, SiGithub } from "react-icons/si";
-import { responsive } from "./ui/responsive";
 
 const repoList = [
   {
@@ -26,12 +25,12 @@ const repoList = [
 
 export default function Repository() {
   return (
-    <section className={`px-60 py-10 bg-gray-800 ${responsive}`}>
+    <section className="px-60 py-10 bg-gray-800">
       <Title text_color="text-white">REPOSITORY</Title>
-      <ul className="grid grid-cols-2 lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 justify-between gap-32">
+      <ul className="grid grid-cols-2 justify-between gap-32">
         {repoList.map((list) => (
           <li
-            className="flex flex-col gap-5 justify-center items-center h-full w-full p-5 bg-white  rounded-2xl"
+            className="flex flex-col gap-5 justify-center items-center h-full w-full p-5 bg-white rounded-2xl"
             key={list.name}
           >
             <h1 className="flex items-center gap-3 text-4xl font-black">
@@ -39,7 +38,7 @@ export default function Repository() {
               {list.name}
             </h1>
             <Link
-              className="text-blue-400 sm:text-sm"
+              className="text-blue-400"
               href={list.path}
               target="_blank"
               referrerPolicy="no-referrer"
@@ -47,7 +46,7 @@ export default function Repository() {
               🔗{list.path}🔗
             </Link>
             <h2 className="text-xl font-bold">{list.title}</h2>
-            <div className="flex flex-col gap-1 text-center sm:text-xs">
+            <div className="flex flex-col gap-1 text-center">
               <p>{list.content1}</p>
               <p>{list.content2}</p>
               <p>{list.content3}</p>

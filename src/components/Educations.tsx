@@ -10,7 +10,7 @@ export default function Educations() {
           <EducationIcon />
           <p>교육</p>
         </div>
-        <div className="flex gap-5 items-center sm:pl-6">
+        <div className="flex gap-5 items-center">
           <CircleImage
             className="rounded-full"
             image={zerobase}

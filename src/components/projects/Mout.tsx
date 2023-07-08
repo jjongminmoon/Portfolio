@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import MoutCarousel from "../MoutCarousel";
+import MoutCarousel from "./MoutCarousel";
 import SubTitle from "../ui/SubTitle";
 import ToggleButton from "../ui/ToggleButton";
 import Image from "next/image";
-import moutCategory from "../../../public/images/MoutCategory.webp";
+import moutCategory from "../../../public/images/moutCategory.webp";
 import ProjectIntroduction from "../ui/ProjectIntroduction";
 import { useState } from "react";
 
@@ -27,7 +27,7 @@ export default function Mout() {
       </div>
       <ToggleButton toggled={toggled} onToggle={() => setToggled(!toggled)} />
       {toggled && (
-        <div className="ease-in-out duration-1000">
+        <div>
           <div className="w-full rounded-md mt-5 mb-10 border">
             <MoutCarousel />
           </div>
@@ -79,6 +79,16 @@ export default function Mout() {
               가능하도록 구현
             </p>
           </ProjectIntroduction>
+          <SubTitle>트러블 슈팅</SubTitle>
+          <div className="flex gap-2 items-baseline p-2 mb-2">
+            <p>🔥 Firestore Database 업데이트 메서드 :</p>
+            <Link
+              href="/mout/troubleshooting1"
+              className="text-xl font-bold text-blue-400 cursor-pointer"
+            >
+              🔎 자세히보기
+            </Link>
+          </div>
         </div>
       )}
     </article>

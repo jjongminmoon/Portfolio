@@ -2,7 +2,6 @@ import Title from "./ui/Title";
 import samsung from "../../public/images/samsung.webp";
 import nonghyup from "../../public/images/nonghyup.webp";
 import CircleImage from "./ui/CircleImage";
-import { responsive } from "./ui/responsive";
 
 const careerList = [
   {
@@ -28,16 +27,12 @@ const careerList = [
 ];
 
 export default function Career() {
-  const careerResponsive = "sm:flex sm:flex-col sm:items-center";
   return (
-    <section className={`px-60 bg-gray-200 py-10 ${responsive} md:text-sm sm:text-xs`}>
+    <section className="px-60 bg-gray-200 py-10">
       <Title>CAREER</Title>
       <div className="flex flex-col items-center gap-10">
         {careerList.map((list) => (
-          <article
-            key={list.name}
-            className={`flex justify-center w-full gap-10 ${careerResponsive}`}
-          >
+          <article key={list.name} className="flex justify-center w-full gap-10">
             <CircleImage
               className="rounded-full flex-shrink-0"
               image={list.logo}
@@ -45,7 +40,7 @@ export default function Career() {
               width={200}
               height={200}
             />
-            <div className="w-full flex flex-col gap-2 pl-10 border-l border-gray-400 sm:items-center sm:border-none sm:p-0">
+            <div className="flex flex-col gap-2 pl-10 border-l border-gray-400 w-full">
               <h1 className="text-xl font-black">{list.name}</h1>
               <p className="text-gray-500">{list.period}</p>
               <h2 className="font-semibold"></h2>
