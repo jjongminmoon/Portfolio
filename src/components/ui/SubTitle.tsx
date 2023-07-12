@@ -3,5 +3,5 @@ type Props = {
 };
 
 export default function SubTitle({ children }: Props) {
-  return <h3 className="text-xl font-bold">📌 {children}</h3>;
+  return <h3 className="text-xl font-bold min-w-[80px]">📌 {children}</h3>;
 }

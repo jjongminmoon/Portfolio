@@ -8,6 +8,7 @@ import Image from "next/image";
 import moutCategory from "../../../public/images/moutCategory.webp";
 import ProjectIntroduction from "../ui/ProjectIntroduction";
 import { useState } from "react";
+import TroubleShootingItem from "../ui/TroubleShootingItem";
 
 export default function Mout() {
   const [toggled, setToggled] = useState(false);
@@ -80,15 +81,9 @@ export default function Mout() {
             </p>
           </ProjectIntroduction>
           <SubTitle>트러블 슈팅</SubTitle>
-          <div className="flex gap-2 items-baseline p-2 mb-2">
-            <p>🔥 Firestore Database 업데이트 메서드 :</p>
-            <Link
-              href="/mout/troubleshooting1"
-              className="text-xl font-bold text-blue-400 cursor-pointer"
-            >
-              🔎 자세히보기
-            </Link>
-          </div>
+          <TroubleShootingItem href="/moutTroubleshooting1">
+            Firestore Database 업데이트 메서드
+          </TroubleShootingItem>
         </div>
       )}
     </article>

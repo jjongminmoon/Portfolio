@@ -3,5 +3,5 @@ type Props = {
 };
 
 export default function Flex({ children }: Props) {
-  return <div className="flex items-center gap-2">{children}</div>;
+  return <div className="flex flex-col gap-2">{children}</div>;
 }

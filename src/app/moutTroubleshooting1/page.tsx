@@ -1,11 +1,9 @@
-"use client";
-
 import Flex from "@/components/ui/Flex";
 import SubTitle from "@/components/ui/SubTitle";
 import Title from "@/components/ui/Title";
 import TroubleShooting from "@/components/ui/TroubleShooting";
-import firestoreMethod from "../../../../public/images/firestoreMethod.webp";
-import contextAPI from "../../../../public/images/contextAPI.webp";
+import firestoreMethod from "../../../public/images/firestoreMethod.webp";
+import contextAPI from "../../../public/images/contextAPI.webp";
 import SolveItem from "@/components/ui/SolveItem";
 import PreviousButton from "@/components/ui/PreviousButton";
 
@@ -15,14 +13,14 @@ export default function TroubleShooting1() {
       <PreviousButton />
       <Title>🔥 Firestore Database 업데이트 메서드</Title>
       <Flex>
-        <SubTitle>문제 :</SubTitle>
+        <SubTitle>문제</SubTitle>
         <p>
           유저별 장바구니를 실시간으로 조회하고 업데이트 하는 로직에서 계속된 오류들이 발생하고,
           코드가 길어짐.
         </p>
       </Flex>
       <Flex>
-        <SubTitle>원인 :</SubTitle>
+        <SubTitle>원인</SubTitle>
         <p>
           처음 사용하는 기술로 잘못된 메서드로 함수 내에 코드를 작성했고, 함수 실행에서의 오류
           해결에만 몰두해 같은 결과값을 갖는 코드들을 컴포넌트 내에 중복으로 사용했다.

@@ -8,6 +8,7 @@ import moviewHome from "../../../public/images/moviewHome.webp";
 import ProjectIntroduction from "../ui/ProjectIntroduction";
 import MoviewCarousel from "./MoviewCarousel";
 import { useState } from "react";
+import TroubleShootingItem from "../ui/TroubleShootingItem";
 
 export default function Mout() {
   const [toggled, setToggled] = useState(false);
@@ -69,6 +70,13 @@ export default function Mout() {
             <p>✅ Sanity를 통해 유저 / 리뷰(댓글/좋아요) 데이터베이스 생성</p>
             <p>✅ Sanity GROQ를 사용한 함수를 통해 데이터를 쉽게 조회하고 가져와 사용</p>
           </ProjectIntroduction>
+          <SubTitle>트러블 슈팅</SubTitle>
+          <TroubleShootingItem href="/moviewTroubleshooting1">
+            POST FormData 전송
+          </TroubleShootingItem>
+          <TroubleShootingItem href="/moviewTroubleshooting2">
+            검색어 자동완성 최적화
+          </TroubleShootingItem>
         </div>
       )}
     </article>
