@@ -25,7 +25,7 @@ export default function Mout() {
           </h2>
           <p className="text-gray-500 sm:text-xs">(2023.06.22 - 07.04)</p>
         </div>
-        <Image className="w-3/5 h-full border" src={moviewHome} alt="Project Image" />
+        <Image className="w-3/5 h-full border" src={moviewHome} alt="Project Image" priority />
       </div>
       <ToggleButton toggled={toggled} onToggle={() => setToggled(!toggled)} />
       {toggled && (
