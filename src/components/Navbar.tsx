@@ -27,7 +27,13 @@ export default function Navbar() {
         scrollPosition > 0 ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
-      <Link to="a" spy={true} smooth={true} offset={-60} className="text-xl font-bold">
+      <Link
+        to="a"
+        spy={true}
+        smooth={true}
+        offset={-60}
+        className="text-xl font-bold cursor-pointer"
+      >
         <h1>{"MJ's Portfolio"}</h1>
       </Link>
       <nav className="flex gap-8 text-neutral-700">
