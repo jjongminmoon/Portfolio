@@ -5,7 +5,7 @@ import MoutCarousel from "./MoutCarousel";
 import SubTitle from "../ui/SubTitle";
 import ToggleButton from "../ui/ToggleButton";
 import Image from "next/image";
-import moutCategory from "../../../public/images/moutCategory.webp";
+import moutCategory from "../../../public/images/MoutCategory.webp";
 import ProjectIntroduction from "../ui/ProjectIntroduction";
 import TroubleShootingItem from "../ui/TroubleShootingItem";
 import { useState } from "react";

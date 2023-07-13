@@ -4,7 +4,7 @@ import Link from "next/link";
 import SubTitle from "../ui/SubTitle";
 import ToggleButton from "../ui/ToggleButton";
 import Image from "next/image";
-import moviewHome from "../../../public/images/moviewHome.webp";
+import moviewHome from "../../../public/images/MoviewHome.webp";
 import ProjectIntroduction from "../ui/ProjectIntroduction";
 import MoviewCarousel from "./MoviewCarousel";
 import { useState } from "react";
