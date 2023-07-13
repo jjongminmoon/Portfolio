@@ -20,7 +20,7 @@ export default function MoviewTroubleshooting2() {
         </p>
       </Flex>
       <SubTitle>해결 과정</SubTitle>
-      <SolveItem image={debounce} alt="debounce 코드 이미지">
+      <SolveItem>
         <p>
           ✅ Debounce를 통해 지정한 시간 안에서 연속적으로 호출되는 이벤트 중 마지막 이벤트만을 호출
         </p>
