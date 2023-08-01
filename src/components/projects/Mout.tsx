@@ -5,7 +5,7 @@ import MoutCarousel from "./MoutCarousel";
 import SubTitle from "../ui/SubTitle";
 import ToggleButton from "../ui/ToggleButton";
 import Image from "next/image";
-import moutCategory from "../../../public/images/MoutCategory.webp";
+import moutHome from "../../../public/images/MoutHome.webp";
 import ProjectIntroduction from "../ui/ProjectIntroduction";
 import TroubleShootingItem from "../ui/TroubleShootingItem";
 import { useState } from "react";
@@ -24,7 +24,7 @@ export default function Mout() {
           </h2>
           <p className="text-gray-500 sm:text-xs">(2023.03.13 - 04.02)</p>
         </div>
-        <Image className="w-3/5 h-full border" src={moutCategory} alt="Project Image" priority />
+        <Image className="w-3/5 h-full border" src={moutHome} alt="Project Image" priority />
       </div>
       <ToggleButton toggled={toggled} onToggle={() => setToggled(!toggled)} />
       {toggled && (
@@ -35,15 +35,16 @@ export default function Mout() {
           <SubTitle>개요</SubTitle>
           <div className="p-2">
             프론트엔드 부트캠프가 끝난 후 그 전까지 배웠던 내용들을 통해 쇼핑몰 및 커뮤니티
-            프로젝트를 진행했습니다.
+            프로젝트를 진행했습니다. 이후 완성도와 성능을 높이기 위해 리팩토링을 진행했습니다.
             <br />
             상품 데이터 보여주기, 회원가입, 로그인, 제품/사이즈 선택 후 장바구니에 담기, 장바구니,
-            제품 검색/자동완성, 제품 카테고리, 상세 페이지 등 프론트엔드 개발자로서 구현 가능한
-            대부분의 기능들이 들어가 있는 웹서비스가 쇼핑몰이었기 때문에 지금까지 배운 것을 활용해
-            완성도 있는 웹서비스를 구현해보고 싶었습니다.
+            제품 검색/자동완성, 제품 카테고리/정렬, 상세 페이지, 좋아요 등 프론트엔드 개발자로서
+            구현 가능한 대부분의 기능들이 들어가 있는 웹서비스가 쇼핑몰이었기 때문에 지금까지 배운
+            것을 활용해 완성도 있는 웹서비스를 구현했습니다.
             <br />
             또한, 추가적으로 데이터베이스를 만들어 이를 활용해 스타일 공유 커뮤니티 페이지를
-            구현하여 게시글을 작성하고 볼 수 있는 등 좀 더 재미있는 요소를 추가해보았습니다.
+            구현하여 게시글을 작성하고 다른 사람의 게시물을 좋아요할 수 있는 등 좀 더 재미있는
+            요소를 추가해보았습니다.
           </div>
           <SubTitle>
             배포 링크 :{" "}
@@ -52,33 +53,60 @@ export default function Mout() {
               href="https://mjstore.vercel.app/"
               referrerPolicy="no-referrer"
             >
-              https://mjstore.vercel.app/
+              ✅ 리팩토링 전 (Mjstore)
+            </Link>
+            <span className="mx-2">/</span>
+            <Link
+              className="text-blue-400 sm:text-sm"
+              href="https://mout.vercel.app/"
+              referrerPolicy="no-referrer"
+            >
+              ✅ 리팩토링 후 (Mout__)
+            </Link>
+          </SubTitle>
+          <div className="my-2" />
+          <SubTitle>
+            깃허브 :{" "}
+            <Link
+              className="text-blue-400 sm:text-sm"
+              href="https://github.com/jjongminmoon/mjstore"
+              referrerPolicy="no-referrer"
+            >
+              ✅ 리팩토링 전 (Mjstore)
+            </Link>
+            <span className="mx-2">/</span>
+            <Link
+              className="text-blue-400 sm:text-sm"
+              href="https://github.com/jjongminmoon/Mout__"
+              referrerPolicy="no-referrer"
+            >
+              ✅ 리팩토링 후 (Mout__)
             </Link>
           </SubTitle>
           <div className="flex flex-col gap-2 my-2 sm:text-sm sm:flex-col sm:items-start">
             <SubTitle>기술 스택 : </SubTitle>
             <p>
-              &nbsp;Typescript, React, React-Query, Emotion, Firebase Auth, Firestore Database,
-              Vercel
+              &nbsp;Typescript, React, React-Query, Context API, Axios, Emotion, Firebase Auth,
+              Firestore Database, Vercel
             </p>
           </div>
           <SubTitle>코드 및 기능 소개</SubTitle>
           <ProjectIntroduction>
             <p>✅ Glitch를 활용해 배포한 제품 API를 사용해 제품 리스트 구현</p>
             <p>
-              ✅ React-Query를 사용해 서버에 저장되어 있는 상태를 데이터가 필요한 컴포넌트 별로
-              간결하게 사용
-            </p>
-            <p>✅ debounce를 활용한 커스텀 훅을 통해 검색창 자동완성 관련 효율성 및 성능 개선</p>
-            <p>✅ Firebase Auth로 회원가입 / 로그인 / 회원정보 수정 구현</p>
-            <p>
-              ✅ Firestore Database로 유저별 장바구니 / 상품 리뷰 / 스타일 공유 커뮤니티
-              데이터베이스 구현
+              ✅ React-Query와 Context API, 커스텀 훅을 통해 서버에 저장되어 있는 상태를 데이터가
+              필요한 컴포넌트 별로 간결하게 사용
             </p>
             <p>
-              ✅ UI는 반응형 웹으로로 스타일링해 데스크톱, 모바일 환경 모두 큰 불편함없이 사용
-              가능하도록 구현
+              ✅ debounce를 활용한 커스텀 훅을 통해 API 호출 최소화로 검색창 자동완성 관련 효율성 및
+              성능 개선
             </p>
+            <p>✅ Firebase Auth로 로그인 및 회원가입 구현</p>
+            <p>
+              ✅ Firestore Database로 유저의 회원가입 시 유저별 장바구니 / 닉네임 / 주소 / 좋아요 /
+              스타일 공유 커뮤니티 관련 데이터베이스 구현
+            </p>
+            <p>✅ 리팩토링 전 반응형 웹 스타일링으로 PC / 모바일 모두 사용</p>
           </ProjectIntroduction>
           <SubTitle>트러블 슈팅</SubTitle>
           <TroubleShootingItem href="/moutTroubleshooting1">

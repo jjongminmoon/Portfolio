@@ -54,6 +54,17 @@ export default function Mout() {
               https://moview-d83d.vercel.app/
             </Link>
           </SubTitle>
+          <div className="my-2" />
+          <SubTitle>
+            깃허브 :{" "}
+            <Link
+              className="text-blue-400 sm:text-sm"
+              href="https://github.com/jjongminmoon/Moview"
+              referrerPolicy="no-referrer"
+            >
+              Moview
+            </Link>
+          </SubTitle>
           <div className="flex flex-col gap-2 my-2 sm:text-sm sm:flex-col sm:items-start">
             <SubTitle>기술 스택 : </SubTitle>
             <p>&nbsp;Next.js, Typescript, SWR, Tailwind CSS, Sanity, Vercel</p>
