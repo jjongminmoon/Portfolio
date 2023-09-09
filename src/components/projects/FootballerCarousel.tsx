@@ -4,40 +4,34 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import moutHome from "../../../public/images/MoutHome.webp";
-import moutSearch from "../../../public/images/MoutSearch.webp";
-import moutTrade from "../../../public/images/MoutTrade.webp";
-import moutDetail from "../../../public/images/MoutDetail.webp";
-import moutLogin from "../../../public/images/MoutLogin.webp";
-import moutTrend from "../../../public/images/MoutTrend.webp";
-import moutUpload from "../../../public/images/MoutUpload.webp";
-import moutMypage from "../../../public/images/MoutMyPage.webp";
-import moutCart from "../../../public/images/MoutCart.webp";
-import moutFavorite from "../../../public/images/MoutFavorite.webp";
-import moutAddress from "../../../public/images/MoutAddress.webp";
-import moutPosts from "../../../public/images/MoutPosts.webp";
-import moutLikes from "../../../public/images/MoutLikes.webp";
+import footballerHome from "../../../public/images/FootballerHome.webp";
+import footballerRegisterPlayer from "../../../public/images/FootballerRegisterPlayer.webp";
+import footballerRegisterTeam from "../../../public/images/FootballerRegisterTeam.webp";
+import footballerSearch from "../../../public/images/FootballerSearch.webp";
+import footballerDetail from "../../../public/images/FootballerDetail.webp";
+import footballerInput from "../../../public/images/FootballerInput.webp";
+import footballerField from "../../../public/images/FootballerField.webp";
+import footballerCup from "../../../public/images/FootballerCup.webp";
+import footballerMypage from "../../../public/images/FootballerMypage.webp";
+import footballerMypage2 from "../../../public/images/FootballerMypage2.webp";
 import Image from "next/image";
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs";
 import { useCallback, useRef } from "react";
 
 const imageList = [
-  { image: moutHome },
-  { image: moutSearch },
-  { image: moutTrade },
-  { image: moutDetail },
-  { image: moutLogin },
-  { image: moutTrend },
-  { image: moutUpload },
-  { image: moutMypage },
-  { image: moutCart },
-  { image: moutFavorite },
-  { image: moutAddress },
-  { image: moutPosts },
-  { image: moutLikes }
+  { image: footballerHome },
+  { image: footballerRegisterPlayer },
+  { image: footballerRegisterTeam },
+  { image: footballerSearch },
+  { image: footballerDetail },
+  { image: footballerInput },
+  { image: footballerField },
+  { image: footballerCup },
+  { image: footballerMypage },
+  { image: footballerMypage2 }
 ];
 
-export default function MoutCarousel() {
+export default function FootballerCarousel() {
   const slickRef: any | null = useRef(null);
 
   const previous = useCallback(() => slickRef.current.slickPrev(), []);

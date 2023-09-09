@@ -1,36 +1,36 @@
 "use client";
 
 import Link from "next/link";
-import MoutCarousel from "./MoutCarousel";
+import FootballerCarousel from "./FootballerCarousel";
 import SubTitle from "../ui/SubTitle";
 import ToggleButton from "../ui/ToggleButton";
 import Image from "next/image";
-import moutHome from "../../../public/images/MoutHome.webp";
+import footballerHome from "../../../public/images/FootballerHome.webp";
 import ProjectIntroduction from "../ui/ProjectIntroduction";
 import TroubleShootingItem from "../ui/TroubleShootingItem";
 import { useState } from "react";
 
-export default function Mout() {
+export default function Footballer() {
   const [toggled, setToggled] = useState(false);
 
   return (
     <article className="bg-white rounded-lg px-7 py-5 mb-10">
       <div className="flex justify-between items-center gap-3 mb-5 sm:flex-col">
         <div className="w-full text-center">
-          <h1 className="text-4xl font-bold mb-4">Mout__</h1>
+          <h1 className="text-4xl font-bold mb-4">풋볼러</h1>
           <h2 className="text-lg sm:text-xs">
-            쇼핑몰 및 스타일 공유 커뮤니티
+            풋살 • 축구 매칭 및 커뮤니티 서비스
             <br /> (개인 프로젝트)
           </h2>
-          <p className="text-gray-500 sm:text-xs">(2023.07.19 - 07.23)</p>
+          <p className="text-gray-500 sm:text-xs">(2023.08.03 - 09.08)</p>
         </div>
-        <Image className="w-3/5 h-full border" src={moutHome} alt="Project Image" priority />
+        <Image className="w-3/5 h-full border" src={footballerHome} alt="Project Image" priority />
       </div>
       <ToggleButton toggled={toggled} onToggle={() => setToggled(!toggled)} />
       {toggled && (
         <div>
           <div className="w-full rounded-md mt-5 mb-10 border">
-            <MoutCarousel />
+            <FootballerCarousel />
           </div>
           <SubTitle>개요</SubTitle>
           <div className="p-2">
@@ -51,15 +51,7 @@ export default function Mout() {
               href="https://mjstore.vercel.app/"
               referrerPolicy="no-referrer"
             >
-              ✅ 리팩토링 전 (Mjstore)
-            </Link>
-            <span className="mx-2">/</span>
-            <Link
-              className="text-blue-400 sm:text-sm"
-              href="https://mout.vercel.app/"
-              referrerPolicy="no-referrer"
-            >
-              ✅ 리팩토링 후 (Mout__)
+              리팩토링 전 (Mjstore)
             </Link>
           </SubTitle>
           <div className="my-2" />
@@ -70,15 +62,7 @@ export default function Mout() {
               href="https://github.com/jjongminmoon/mjstore"
               referrerPolicy="no-referrer"
             >
-              ✅ 리팩토링 전 (Mjstore)
-            </Link>
-            <span className="mx-2">/</span>
-            <Link
-              className="text-blue-400 sm:text-sm"
-              href="https://github.com/jjongminmoon/Mout__"
-              referrerPolicy="no-referrer"
-            >
-              ✅ 리팩토링 후 (Mout__)
+              리팩토링 전 (Mjstore)
             </Link>
           </SubTitle>
           <div className="my-2" />
@@ -95,8 +79,8 @@ export default function Mout() {
           <div className="flex flex-col gap-2 my-2 sm:text-sm sm:flex-col sm:items-start">
             <SubTitle>기술 스택 : </SubTitle>
             <p>
-              &nbsp;Typescript, React, React-Query, Context API, Axios, Emotion, Firebase Auth,
-              Firestore Database, Vercel
+              &nbsp;Typescript, React, Context API, Emotion, Firebase Auth, Firestore Database,
+              Vercel
             </p>
           </div>
           <SubTitle>코드 및 기능 소개</SubTitle>

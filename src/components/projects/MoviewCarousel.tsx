@@ -25,7 +25,7 @@ const imageList = [
   { image: moviewProfile }
 ];
 
-export default function MoutCarousel() {
+export default function MoviewCarousel() {
   const slickRef: any | null = useRef(null);
 
   const previous = useCallback(() => slickRef.current.slickPrev(), []);

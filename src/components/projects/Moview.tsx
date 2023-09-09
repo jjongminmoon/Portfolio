@@ -36,9 +36,9 @@ export default function Mout() {
           <SubTitle>개요</SubTitle>
           <div className="p-2">
             Next.js와 Sanity를 공부한 뒤 배운 것을 토대로 프로젝트를 진행해보고자 했고, 이전에 영화
-            커뮤니티를 과제로 제출했지만 부족했던 점이 많아 만족스럽지 못했던 것을 보완하고 새로
-            공부한 것들을 적용해 컴포넌트 재사용성, 성능 등을 개선한 영화 정보검색 및 커뮤니티 웹
-            서비스입니다.
+            커뮤니티를 프로젝트로 진행한 적이 있었지만 부족했던 점이 많아 만족스럽지 못했던 것을 더
+            보완하고자 했습니다. 추가로 컴포넌트 재사용성, 성능 등을 개선한 영화 정보검색 및
+            커뮤니티 웹 서비스입니다.
             <br />
             회원가입, 로그인, 영화 정보 검색, 영화 추천, 리뷰 작성, 유저 검색 등의 기능이 있습니다.
             또한, 유저 프로필, 리뷰 댓글, 좋아요 기능을 통해 리뷰의 신뢰도를 확인할 수 있도록
@@ -62,7 +62,18 @@ export default function Mout() {
               href="https://github.com/jjongminmoon/Moview"
               referrerPolicy="no-referrer"
             >
-              Moview
+              https://github.com/jjongminmoon/Moview
+            </Link>
+          </SubTitle>
+          <div className="my-2" />
+          <SubTitle>
+            시연 영상 :{" "}
+            <Link
+              className="text-blue-400 sm:text-sm"
+              href="https://github.com/jjongminmoon/Moview"
+              referrerPolicy="no-referrer"
+            >
+              링크
             </Link>
           </SubTitle>
           <div className="flex flex-col gap-2 my-2 sm:text-sm sm:flex-col sm:items-start">
