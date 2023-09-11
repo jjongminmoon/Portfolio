@@ -99,6 +99,7 @@ export default function Mout() {
           <TroubleShootingItem href="/moviewTroubleshooting2">
             검색어 자동완성 최적화
           </TroubleShootingItem>
+          <TroubleShootingItem href="">리뷰 작성 페이지 오류 수정중</TroubleShootingItem>
         </div>
       )}
     </article>
