@@ -85,7 +85,7 @@ export default function Mout() {
             시연 영상 :{" "}
             <Link
               className="text-blue-400 sm:text-sm"
-              href="https://github.com/jjongminmoon/Moview"
+              href="https://youtu.be/U_JqM2Cc4Mo"
               referrerPolicy="no-referrer"
             >
               🎞️링크🎞️

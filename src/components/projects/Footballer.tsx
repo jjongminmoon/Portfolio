@@ -66,7 +66,7 @@ export default function Footballer() {
             시연 영상 :{" "}
             <Link
               className="text-blue-400 sm:text-sm"
-              href="https://github.com/jjongminmoon/Moview"
+              href="https://youtu.be/dBlLO_cry2s"
               referrerPolicy="no-referrer"
             >
               🎞️링크🎞️
