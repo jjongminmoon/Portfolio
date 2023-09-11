@@ -46,6 +46,7 @@ export default function Footballer() {
               className="text-blue-400 sm:text-sm"
               href="https://footballer-eta.vercel.app/"
               referrerPolicy="no-referrer"
+              target="_blank"
             >
               https://footballer-eta.vercel.app/
             </Link>
@@ -57,6 +58,7 @@ export default function Footballer() {
               className="text-blue-400 sm:text-sm"
               href="https://github.com/jjongminmoon/Footballer"
               referrerPolicy="no-referrer"
+              target="_blank"
             >
               https://github.com/jjongminmoon/Footballer
             </Link>
@@ -68,6 +70,7 @@ export default function Footballer() {
               className="text-blue-400 sm:text-sm"
               href="https://youtu.be/dBlLO_cry2s"
               referrerPolicy="no-referrer"
+              target="_blank"
             >
               🎞️링크🎞️
             </Link>

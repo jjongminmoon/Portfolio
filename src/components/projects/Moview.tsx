@@ -50,6 +50,7 @@ export default function Mout() {
               className="text-blue-400 sm:text-sm"
               href="https://moview-d83d.vercel.app/"
               referrerPolicy="no-referrer"
+              target="_blank"
             >
               https://moview-d83d.vercel.app/
             </Link>
@@ -61,6 +62,7 @@ export default function Mout() {
               className="text-blue-400 sm:text-sm"
               href="https://github.com/jjongminmoon/Moview"
               referrerPolicy="no-referrer"
+              target="_blank"
             >
               https://github.com/jjongminmoon/Moview
             </Link>
@@ -72,6 +74,7 @@ export default function Mout() {
               className="text-blue-400 sm:text-sm"
               href="https://youtu.be/7QG5GigLe5A"
               referrerPolicy="no-referrer"
+              target="_blank"
             >
               🎞️링크🎞️
             </Link>

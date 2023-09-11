@@ -49,6 +49,7 @@ export default function Mout() {
               className="text-blue-400 sm:text-sm"
               href="https://mjstore.vercel.app/"
               referrerPolicy="no-referrer"
+              target="_blank"
             >
               ✅ 리팩토링 전 (Mjstore)
             </Link>
@@ -57,6 +58,7 @@ export default function Mout() {
               className="text-blue-400 sm:text-sm"
               href="https://mout.vercel.app/"
               referrerPolicy="no-referrer"
+              target="_blank"
             >
               ✅ 리팩토링 후 (Mout__)
             </Link>
@@ -68,6 +70,7 @@ export default function Mout() {
               className="text-blue-400 sm:text-sm"
               href="https://github.com/jjongminmoon/mjstore"
               referrerPolicy="no-referrer"
+              target="_blank"
             >
               ✅ 리팩토링 전 (Mjstore)
             </Link>
@@ -76,6 +79,7 @@ export default function Mout() {
               className="text-blue-400 sm:text-sm"
               href="https://github.com/jjongminmoon/Mout__"
               referrerPolicy="no-referrer"
+              target="_blank"
             >
               ✅ 리팩토링 후 (Mout__)
             </Link>
@@ -87,6 +91,7 @@ export default function Mout() {
               className="text-blue-400 sm:text-sm"
               href="https://youtu.be/U_JqM2Cc4Mo"
               referrerPolicy="no-referrer"
+              target="_blank"
             >
               🎞️링크🎞️
             </Link>
