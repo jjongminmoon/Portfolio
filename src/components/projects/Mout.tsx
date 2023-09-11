@@ -34,15 +34,14 @@ export default function Mout() {
           </div>
           <SubTitle>개요</SubTitle>
           <div className="p-2">
-            상품 데이터 보여주기, 회원가입, 로그인, 제품/사이즈 선택 후 장바구니에 담기, 장바구니,
-            제품 검색/자동완성, 제품 카테고리/정렬, 상세 페이지, 좋아요 등 프론트엔드 개발자로서
-            구현 가능한 대부분의 기능들이 들어가 있는 웹서비스가 쇼핑몰이었기 때문에 지금까지 배운
-            것을 활용해 쇼핑몰 및 스타일 공유 커뮤니티 서비스를 구현하고 리팩토링을 통하여 완성도를
-            높였습니다.
+            옷을 좋아하는 사람들이 많이 이용하는 무신사의 솔드아웃 서비스를 벤치마킹하여 상품 데이터
+            보여주기, 회원가입, 로그인, 제품/사이즈 선택 후 장바구니에 담기, 장바구니, 제품
+            검색/자동완성, 제품 카테고리/정렬, 상세 페이지, 좋아요 등 쇼핑몰 및 스타일 공유 커뮤니티
+            서비스를 구현하고 리팩토링을 통하여 완성도를 높였습니다.
             <br />
             또한, 추가적으로 데이터베이스를 만들어 이를 활용해 스타일 공유 커뮤니티 페이지를
             구현하여 게시글을 작성하고 다른 사람의 게시물을 좋아요할 수 있는 등의 요소를
-            추가했습니다..
+            추가했습니다.
           </div>
           <SubTitle>
             배포 링크 :{" "}
@@ -89,7 +88,7 @@ export default function Mout() {
               href="https://github.com/jjongminmoon/Moview"
               referrerPolicy="no-referrer"
             >
-              링크
+              🎞️링크🎞️
             </Link>
           </SubTitle>
           <div className="flex flex-col gap-2 my-2 sm:text-sm sm:flex-col sm:items-start">

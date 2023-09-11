@@ -73,7 +73,7 @@ export default function Mout() {
               href="https://github.com/jjongminmoon/Moview"
               referrerPolicy="no-referrer"
             >
-              링크
+              🎞️링크🎞️
             </Link>
           </SubTitle>
           <div className="flex flex-col gap-2 my-2 sm:text-sm sm:flex-col sm:items-start">

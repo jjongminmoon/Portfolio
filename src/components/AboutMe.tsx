@@ -19,7 +19,7 @@ const itemList = [
   { title: "생년월일", icon: <CalendarIcon />, content: "1994. 12. 16" },
   { title: "주소", icon: <AddressIcon />, content: "인천광역시 서구 심곡동" },
   { title: "연락처", icon: <PhoneIcon />, content: "010-3359-7042" },
-  { title: "이메일", icon: <EmailIcon />, content: "mjm7042@kakao.com" },
+  { title: "이메일", icon: <EmailIcon />, content: "mjm7042@naver.com" },
   { title: "학력", icon: <GraduateIcon />, content: "동양미래대학교 (경영정보학부)" }
 ];
 

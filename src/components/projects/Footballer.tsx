@@ -34,24 +34,20 @@ export default function Footballer() {
           </div>
           <SubTitle>개요</SubTitle>
           <div className="p-2">
-            상품 데이터 보여주기, 회원가입, 로그인, 제품/사이즈 선택 후 장바구니에 담기, 장바구니,
-            제품 검색/자동완성, 제품 카테고리/정렬, 상세 페이지, 좋아요 등 프론트엔드 개발자로서
-            구현 가능한 대부분의 기능들이 들어가 있는 웹서비스가 쇼핑몰이었기 때문에 지금까지 배운
-            것을 활용해 쇼핑몰 및 스타일 공유 커뮤니티 서비스를 구현하고 리팩토링을 통하여 완성도를
-            높였습니다.
-            <br />
-            또한, 추가적으로 데이터베이스를 만들어 이를 활용해 스타일 공유 커뮤니티 페이지를
-            구현하여 게시글을 작성하고 다른 사람의 게시물을 좋아요할 수 있는 등의 요소를
-            추가했습니다..
+            풋살•축구를 좋아하는 사람들이 팀끼리 매칭을 잡거나, 서로 간의 교류를 할 수 있는
+            서비스입니다. 취미를 통해 좀 더 팀과 선수에 집중된 서비스를 만들고자 했습니다. 선수
+            등록, 팀 등록, 선수 영입, 입단 신청, 선수 찾기 등을 통해 매칭 서비스를 이용할 수
+            있습니다. 또한, 선수와 팀을 평가할 수 있고, 구장 정보 및 지도를 통해 위치까지 확인이
+            가능합니다.
           </div>
           <SubTitle>
             배포 링크 :{" "}
             <Link
               className="text-blue-400 sm:text-sm"
-              href="https://mjstore.vercel.app/"
+              href="https://footballer-eta.vercel.app/"
               referrerPolicy="no-referrer"
             >
-              리팩토링 전 (Mjstore)
+              https://footballer-eta.vercel.app/
             </Link>
           </SubTitle>
           <div className="my-2" />
@@ -59,10 +55,10 @@ export default function Footballer() {
             깃허브 :{" "}
             <Link
               className="text-blue-400 sm:text-sm"
-              href="https://github.com/jjongminmoon/mjstore"
+              href="https://github.com/jjongminmoon/Footballer"
               referrerPolicy="no-referrer"
             >
-              리팩토링 전 (Mjstore)
+              https://github.com/jjongminmoon/Footballer
             </Link>
           </SubTitle>
           <div className="my-2" />
@@ -73,7 +69,7 @@ export default function Footballer() {
               href="https://github.com/jjongminmoon/Moview"
               referrerPolicy="no-referrer"
             >
-              링크
+              🎞️링크🎞️
             </Link>
           </SubTitle>
           <div className="flex flex-col gap-2 my-2 sm:text-sm sm:flex-col sm:items-start">
@@ -85,26 +81,21 @@ export default function Footballer() {
           </div>
           <SubTitle>코드 및 기능 소개</SubTitle>
           <ProjectIntroduction>
-            <p>✅ Glitch를 활용해 배포한 제품 API를 사용해 제품 리스트 구현</p>
             <p>
-              ✅ React-Query와 Context API, 커스텀 훅을 통해 서버에 저장되어 있는 상태를 데이터가
-              필요한 컴포넌트 별로 간결하게 사용
+              ✅ Firestore Database로 구장 리스트 / 선수 / 팀 / 매치 / 컵대회 데이터베이스를 만들어
+              실시간 데이터 변경 가능
             </p>
+            <p>
+              ✅ Context API, 커스텀 훅을 통해 서버에 저장되어 있는 상태를 데이터가 필요한 컴포넌트
+              별로 간결하게 사용
+            </p>
+            <p>✅ React Suspense 활용을 통한 로딩 화면 구현</p>
             <p>
               ✅ debounce를 활용한 커스텀 훅을 통해 API 호출 최소화로 검색창 자동완성 관련 효율성 및
               성능 개선
             </p>
             <p>✅ Firebase Auth로 로그인 및 회원가입 구현</p>
-            <p>
-              ✅ Firestore Database로 유저의 회원가입 시 유저별 장바구니 / 닉네임 / 주소 / 좋아요 /
-              스타일 공유 커뮤니티 관련 데이터베이스 구현
-            </p>
-            <p>✅ 리팩토링 전 반응형 웹 스타일링으로 PC / 모바일 모두 사용</p>
           </ProjectIntroduction>
-          <SubTitle>트러블 슈팅</SubTitle>
-          <TroubleShootingItem href="/moutTroubleshooting1">
-            Firestore Database 업데이트 메서드
-          </TroubleShootingItem>
         </div>
       )}
     </article>
