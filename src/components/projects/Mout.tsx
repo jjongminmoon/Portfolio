@@ -109,7 +109,7 @@ export default function Mout() {
             데이터베이스 구조:{" "}
             <Link
               className="text-blue-400 sm:text-sm"
-              href="https://www.notion.so/Mout__-1da9ecc558e64980bded42329cb86268?pvs=4"
+              href="https://proud-dove-860.notion.site/Mout__-1da9ecc558e64980bded42329cb86268?pvs=4"
               referrerPolicy="no-referrer"
               target="_blank"
             >

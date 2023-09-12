@@ -104,7 +104,7 @@ export default function Footballer() {
             데이터베이스 구조:{" "}
             <Link
               className="text-blue-400 sm:text-sm"
-              href="https://www.notion.so/Footballer-e1f8c9478e3c487b9f63a56b89ad5420?pvs=4"
+              href="https://proud-dove-860.notion.site/Footballer-e1f8c9478e3c487b9f63a56b89ad5420?pvs=4"
               referrerPolicy="no-referrer"
               target="_blank"
             >
