@@ -95,6 +95,19 @@ export default function Mout() {
             <p>✅ Sanity를 통해 유저 / 리뷰(댓글/좋아요) 데이터베이스 생성</p>
             <p>✅ Sanity GROQ를 사용한 함수를 통해 데이터를 쉽게 조회하고 가져와 사용</p>
           </ProjectIntroduction>
+          <div className="my-2" />
+          <SubTitle>
+            데이터베이스 구조:{" "}
+            <Link
+              className="text-blue-400 sm:text-sm"
+              href="https://www.notion.so/Moview-6363ee64a7bc494da02824c11a0c1f22?pvs=4"
+              referrerPolicy="no-referrer"
+              target="_blank"
+            >
+              🔗링크🔗
+            </Link>
+          </SubTitle>
+          <div className="my-2" />
           <SubTitle>트러블 슈팅</SubTitle>
           <TroubleShootingItem href="/moviewTroubleshooting1">
             POST FormData 전송

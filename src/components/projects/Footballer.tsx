@@ -99,6 +99,18 @@ export default function Footballer() {
             </p>
             <p>✅ Firebase Auth로 로그인 및 회원가입 구현</p>
           </ProjectIntroduction>
+          <div className="my-2" />
+          <SubTitle>
+            데이터베이스 구조:{" "}
+            <Link
+              className="text-blue-400 sm:text-sm"
+              href="https://www.notion.so/Footballer-e1f8c9478e3c487b9f63a56b89ad5420?pvs=4"
+              referrerPolicy="no-referrer"
+              target="_blank"
+            >
+              🔗링크🔗
+            </Link>
+          </SubTitle>
         </div>
       )}
     </article>

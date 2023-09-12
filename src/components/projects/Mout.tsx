@@ -104,6 +104,19 @@ export default function Mout() {
             </p>
           </div>
           <SubTitle>코드 및 기능 소개</SubTitle>
+          <div className="my-2" />
+          <SubTitle>
+            데이터베이스 구조:{" "}
+            <Link
+              className="text-blue-400 sm:text-sm"
+              href="https://www.notion.so/Mout__-1da9ecc558e64980bded42329cb86268?pvs=4"
+              referrerPolicy="no-referrer"
+              target="_blank"
+            >
+              🔗링크🔗
+            </Link>
+          </SubTitle>
+          <div className="my-2" />
           <ProjectIntroduction>
             <p>✅ Glitch를 활용해 배포한 제품 API를 사용해 제품 리스트 구현</p>
             <p>
