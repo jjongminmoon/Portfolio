@@ -10,7 +10,7 @@ import moutTrade from "../../../public/images/MoutTradePage.webp";
 import moutProductDetail from "../../../public/images/MoutProductDetail.webp";
 import moutLogin from "../../../public/images/MoutLogin.webp";
 import moutTrend from "../../../public/images/MoutTrendPage.webp";
-import moutMypage from "../../../public/images/MoutMypage.webp";
+import moutMypage from "../../../public/images/MoutMyPage.webp";
 import moutAddress from "../../../public/images/MoutAddress.webp";
 import moutPostDetail from "../../../public/images/MoutPostDetail.webp";
 import moutShowroom from "../../../public/images/MoutShowroom.webp";

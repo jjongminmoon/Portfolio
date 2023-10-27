@@ -89,7 +89,7 @@ export default function Mout() {
             시연 영상 :{" "}
             <Link
               className="text-blue-400 sm:text-sm"
-              href="https://youtu.be/U_JqM2Cc4Mo"
+              href="https://youtu.be/tYrkNDNF8Pg"
               referrerPolicy="no-referrer"
               target="_blank"
             >
