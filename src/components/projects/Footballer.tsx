@@ -7,7 +7,6 @@ import ToggleButton from "../ui/ToggleButton";
 import Image from "next/image";
 import footballerHome from "../../../public/images/FootballerHome.webp";
 import ProjectIntroduction from "../ui/ProjectIntroduction";
-import TroubleShootingItem from "../ui/TroubleShootingItem";
 import { useState } from "react";
 
 export default function Footballer() {

@@ -4,37 +4,31 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import moutHome from "../../../public/images/MoutHome.webp";
+import moutMain from "../../../public/images/MoutMain.webp";
 import moutSearch from "../../../public/images/MoutSearch.webp";
-import moutTrade from "../../../public/images/MoutTrade.webp";
-import moutDetail from "../../../public/images/MoutDetail.webp";
+import moutTrade from "../../../public/images/MoutTradePage.webp";
+import moutProductDetail from "../../../public/images/MoutProductDetail.webp";
 import moutLogin from "../../../public/images/MoutLogin.webp";
-import moutTrend from "../../../public/images/MoutTrend.webp";
-import moutUpload from "../../../public/images/MoutUpload.webp";
-import moutMypage from "../../../public/images/MoutMyPage.webp";
-import moutCart from "../../../public/images/MoutCart.webp";
-import moutFavorite from "../../../public/images/MoutFavorite.webp";
+import moutTrend from "../../../public/images/MoutTrendPage.webp";
+import moutMypage from "../../../public/images/MoutMypage.webp";
 import moutAddress from "../../../public/images/MoutAddress.webp";
-import moutPosts from "../../../public/images/MoutPosts.webp";
-import moutLikes from "../../../public/images/MoutLikes.webp";
+import moutPostDetail from "../../../public/images/MoutPostDetail.webp";
+import moutShowroom from "../../../public/images/MoutShowroom.webp";
 import Image from "next/image";
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs";
 import { useCallback, useRef } from "react";
 
 const imageList = [
-  { image: moutHome },
+  { image: moutMain },
   { image: moutSearch },
   { image: moutTrade },
-  { image: moutDetail },
+  { image: moutProductDetail },
   { image: moutLogin },
   { image: moutTrend },
-  { image: moutUpload },
+  { image: moutPostDetail },
   { image: moutMypage },
-  { image: moutCart },
-  { image: moutFavorite },
   { image: moutAddress },
-  { image: moutPosts },
-  { image: moutLikes }
+  { image: moutShowroom }
 ];
 
 export default function MoutCarousel() {

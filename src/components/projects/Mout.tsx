@@ -5,7 +5,7 @@ import MoutCarousel from "./MoutCarousel";
 import SubTitle from "../ui/SubTitle";
 import ToggleButton from "../ui/ToggleButton";
 import Image from "next/image";
-import moutHome from "../../../public/images/MoutHome.webp";
+import moutMain from "../../../public/images/MoutMain.webp";
 import ProjectIntroduction from "../ui/ProjectIntroduction";
 import TroubleShootingItem from "../ui/TroubleShootingItem";
 import { useState } from "react";
@@ -22,9 +22,9 @@ export default function Mout() {
             쇼핑몰 및 스타일 공유 커뮤니티
             <br /> (개인 프로젝트)
           </h2>
-          <p className="text-gray-500 sm:text-xs">(2023.07.19 - 07.23)</p>
+          <p className="text-gray-500 sm:text-xs">(2023.09.27 - 10.24)</p>
         </div>
-        <Image className="w-3/5 h-full border" src={moutHome} alt="Project Image" priority />
+        <Image className="w-3/5 h-full border" src={moutMain} alt="Project Image" priority />
       </div>
       <ToggleButton toggled={toggled} onToggle={() => setToggled(!toggled)} />
       {toggled && (
@@ -34,8 +34,8 @@ export default function Mout() {
           </div>
           <SubTitle>개요</SubTitle>
           <div className="p-2">
-            옷을 좋아하는 사람들이 많이 이용하는 무신사의 솔드아웃 서비스를 벤치마킹하여 상품 데이터
-            보여주기, 회원가입, 로그인, 제품/사이즈 선택 후 장바구니에 담기, 장바구니, 제품
+            옷을 좋아하는 사람들이 많이 이용하는 무신사의 솔드아웃 서비스와 크림을 벤치마킹하여 상품
+            데이터 보여주기, 회원가입, 로그인, 제품/사이즈 선택 후 장바구니에 담기, 장바구니, 제품
             검색/자동완성, 제품 카테고리/정렬, 상세 페이지, 좋아요 등 쇼핑몰 및 스타일 공유 커뮤니티
             서비스를 구현하고 리팩토링을 통하여 완성도를 높였습니다.
             <br />
@@ -56,7 +56,7 @@ export default function Mout() {
             <span className="mx-2">/</span>
             <Link
               className="text-blue-400 sm:text-sm"
-              href="https://mout.vercel.app/"
+              href="https://mout-vercel.vercel.app/"
               referrerPolicy="no-referrer"
               target="_blank"
             >
@@ -77,7 +77,7 @@ export default function Mout() {
             <span className="mx-2">/</span>
             <Link
               className="text-blue-400 sm:text-sm"
-              href="https://github.com/jjongminmoon/Mout__"
+              href="https://github.com/jjongminmoon/Mout__ver.2"
               referrerPolicy="no-referrer"
               target="_blank"
             >
@@ -100,7 +100,7 @@ export default function Mout() {
             <SubTitle>기술 스택 : </SubTitle>
             <p>
               &nbsp;Typescript, React, React-Query, Context API, Axios, Emotion, Firebase Auth,
-              Firestore Database, Vercel
+              Firestore Database, Vercel, Kakao Map API
             </p>
           </div>
           <SubTitle>코드 및 기능 소개</SubTitle>
@@ -118,19 +118,16 @@ export default function Mout() {
           </SubTitle>
           <div className="my-2" />
           <ProjectIntroduction>
-            <p>✅ Glitch를 활용해 배포한 제품 API를 사용해 제품 리스트 구현</p>
-            <p>
-              ✅ React-Query와 Context API, 커스텀 훅을 통해 서버에 저장되어 있는 상태를 데이터가
-              필요한 컴포넌트 별로 간결하게 사용
-            </p>
+            <p>✅ Context API를 통한 로그인 정보, 전체 유저 정보를 전역적으로 사용</p>
+            <p>✅ useQuery를 훅을 통한 비동기적 data fetching을 컴포넌트 별로 간결하게 사용</p>
             <p>
               ✅ debounce를 활용한 커스텀 훅을 통해 API 호출 최소화로 검색창 자동완성 관련 효율성 및
               성능 개선
             </p>
             <p>✅ Firebase Auth로 로그인 및 회원가입 구현</p>
             <p>
-              ✅ Firestore Database로 유저의 회원가입 시 유저별 장바구니 / 닉네임 / 주소 / 좋아요 /
-              스타일 공유 커뮤니티 관련 데이터베이스 구현
+              ✅ Firestore Database로 유저의 회원가입 시 유저별 프로필 이미지/ 닉네임 / 주소 /
+              장바구니 / 좋아요 / 스타일 공유 커뮤니티 관련 데이터베이스 구현
             </p>
             <p>✅ 리팩토링 전 반응형 웹 스타일링으로 PC / 모바일 모두 사용</p>
           </ProjectIntroduction>
