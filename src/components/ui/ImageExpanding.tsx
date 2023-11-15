@@ -1,5 +1,5 @@
 import Image from "next/image";
-import expandMe from "../../../public/images/expandMe.webp";
+import me from "../../../public/images/me.webp";
 import ExitIcon from "../icons/ExitIcon";
 
 type Props = {
@@ -13,8 +13,8 @@ export default function ImageExpanding({ onClick }: Props) {
         <ExitIcon />
       </button>
       <Image
-        className="w-[500px] h-[550px] rounded-xl"
-        src={expandMe}
+        className="w-[500px] h-[550px] rounded-xl object-contain"
+        src={me}
         alt="Profile Image"
         width={2000}
         height={2000}
