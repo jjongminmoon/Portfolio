@@ -105,17 +105,6 @@ export default function Mout() {
           </div>
           <SubTitle>코드 및 기능 소개</SubTitle>
           <div className="my-2" />
-          <SubTitle>
-            데이터베이스 구조:{" "}
-            <Link
-              className="text-blue-400 sm:text-sm"
-              href="https://proud-dove-860.notion.site/Mout__-1da9ecc558e64980bded42329cb86268?pvs=4"
-              referrerPolicy="no-referrer"
-              target="_blank"
-            >
-              🔗링크🔗
-            </Link>
-          </SubTitle>
           <div className="my-2" />
           <ProjectIntroduction>
             <p>✅ Context API를 통한 로그인 정보, 전체 유저 정보를 전역적으로 사용</p>
@@ -135,6 +124,17 @@ export default function Mout() {
           <TroubleShootingItem href="/moutTroubleshooting1">
             Firestore Database 업데이트 메서드
           </TroubleShootingItem>
+          <SubTitle>
+            데이터베이스 구조:{" "}
+            <Link
+              className="text-blue-400 sm:text-sm"
+              href="https://proud-dove-860.notion.site/Mout__-1da9ecc558e64980bded42329cb86268?pvs=4"
+              referrerPolicy="no-referrer"
+              target="_blank"
+            >
+              🔗링크🔗
+            </Link>
+          </SubTitle>
         </div>
       )}
     </article>
